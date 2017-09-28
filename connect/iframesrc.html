@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>内嵌播放器</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="jplayer.my.min.css">
+<script src="jquery.min.js"></script>
+<script src="jquery.jplayer.min.js"></script>
+<script src="videoCtrl.js"></script>
+
+<!--[if lt IE 9]>
+<script>window.ltIE9 = true;</script>
+<![endif]-->
+</head>
+
+<!--
+<img id="jp_poster_0" style="width: 880px; height: 536px; display: inline;" src="xxx.png">
+<video id="jp_video_0" preload="metadata" src="xxx.mp4" controls title="" style="width: 0; height: 0;"></video>
+-->
+<body>
+<div id="J_minPlayerWrapper" class="jp-video" role="application" aria-label="media player" style="width: 880px; height: 536px;">
+    <div class="jp-type-single">
+        <div id="J_minPlayer" class="jp-jplayer">
+        </div>
+        <div class="jp-gui">
+            <div class="jp-video-play hide">
+                <span class="jp-video-play-icon" role="button">play</span>
+            </div>
+            <div class="jp-video-loading hide">
+                <span class="jp-video-loading-icon" role="button">
+                    <img src="loading.gif" alt="loading">
+                </span>
+            </div>
+            <div class="jp-interface">
+                <div class="jp-interface-bg"></div>
+                <div class="jp-progress">
+                    <div class="jp-seek-bar">
+                        <div class="jp-play-bar"></div>
+                    </div>
+                </div>
+                <div class="jp-progress-point hide"></div>
+                <div class="jp-controls-holder">
+                    <div class="jp-controls">
+                        <span class="jp-play jp-control-btn" role="button">play</span>
+                        <span class="jp-pause jp-control-btn" role="button">pause</span>
+                    </div>
+                    <div class="jp-times">
+                        <span class="jp-current-time" role="timer" aria-label="time">&nbsp;</span>
+                        <i class="sep">/</i>
+                        <span class="jp-duration" role="timer" aria-label="duration">&nbsp;</span>
+                    </div>
+                    <div class="jp-toggles">
+                        <span class="jp-repeat" role="button">repeat</span>
+                        <span class="jp-full-screen jp-control-btn" role="button">full screen</span>
+                    </div>
+                    <div class="jp-volume-controls">
+                        <span class="jp-mute jp-control-btn" role="button">mute</span>
+                        <!-- <span class="jp-volume-max" role="button" >max volume</span> -->
+                        <div class="jp-volume-bar">
+                            <div class="jp-volume-bar-value"></div>
+                            <div class="jp-volume-point hide"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="jp-details hide">
+                    <div class="jp-title" aria-label="title">&nbsp;</div>
+                </div>
+            </div>
+        </div>
+        <div class="jp-no-solution hide">
+            <span>Update Required</span>
+            To play the media you will need to either update your browser to a recent version or update your <a href="http://get.adobe.com/flashplayer/" target="_blank">Flash plugin</a>.
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
